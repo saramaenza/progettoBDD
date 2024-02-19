@@ -1,0 +1,58 @@
+DDL 
+					
+create schema progetto
+
+create table blog (
+   id_blog integer auto_increment primary key,
+   nome varchar(20),
+   font varchar,
+   sfondo varchar,
+   nome_utente varchar(20) references registrato(nome_utente)
+   id_tema integer auto_increment references tema(id_tema)
+)
+
+create table tema (
+   id_tema integer auto_increment primary key,
+   nome varchar(20)
+)
+
+create table post (
+   id_post integer auto_increment  primary key,
+   testo varchar,
+   ora time(2),
+   data date,
+   immagini varchar,
+   titolo varchar(20),
+   id_blog integer auto_increment references blog(id_blog),
+   nome_utente varchar(20) references registrato(nome_utente)
+)
+
+create table registrato (
+   nome_utente varchar(20) primary key,
+   password varchar(8) not null,
+   indirizzo varchar not null,
+   tel varchar(12) unique,
+   e_mail varchar unique
+)
+
+create table commento (
+   data_ora timestamp,
+   testo varchar(200),
+   id_blog integer auto_increment references blog(id_blog),
+   id_post integer auto_increment references post(id_post)
+)
+
+creare table visitatore (
+   id_visitatore integer auto_increment  primary key,
+)
+
+create table lettura (
+   data_ora timestamp,
+   voto numeric(0:5),
+   id_visitatore integer auto_increment references visitatore(id_visitatore),
+   id_blog integer auto_increment references blog(id_blog)
+)
+
+create table utente (
+   id_utente integer auto_increment primary key
+)

@@ -1,0 +1,565 @@
+/*body home*/
+
+html, body {
+	margin: 0%;
+	height: 110%;
+}
+
+#sfondo_alto {
+	height: 150%;
+}
+
+#sfondo_alto2 {
+	height: 140%;
+}
+
+#min {
+	height:100%;
+}
+
+body {
+	color: white;
+	background-image: radial-gradient(#D10000 0%, #800000  90%);
+}
+
+#wrap{
+  height: auto !important;
+  min-height: 100%;
+  position: relative;
+  margin: 0 auto -60px;
+}
+
+header {
+	background-color: #800000 ;
+	box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.33);
+	color: white;
+	height: 60px;
+	width: 100%;
+}
+
+.logo {
+	height: 100%;
+	float: left;
+}
+
+.cerca {
+    height: 60%;
+	float: right;
+	margin-right: 2%;
+	margin-top: 13px;
+    
+}
+
+.home {
+	height: 100%;
+}
+
+.sx {
+	float: left;
+	width: 60%;
+	height: 100%;
+}
+
+.dx {
+	float: right;
+	width: 40%;
+	height: 100%;
+}
+
+.home h1 {
+	font-size: 67px;
+	margin-left: 8%;
+	margin-top: 9%;
+}
+
+.tit1{
+	font-family: 'Dancing Script', cursive;
+	margin-top: -40%;
+}
+
+.tit2 {
+	font-family: 'Ibarra Real Nova', serif;
+	margin-bottom: -28%;
+}
+
+.home h2 {
+	font-family: 'Raleway', sans-serif;
+	margin-left: 28%;
+	letter-spacing: 1px;
+	word-spacing: 2px;  
+}
+
+.home img {
+	width: 38%;
+	padding-left: 32%;
+}
+
+.pulsante {
+	cursor: pointer;
+	color: black;
+	text-align: center;
+	padding: 15px;
+	border: solid #4C1113;
+	background: white;
+	width: 130px;
+	border-radius: 10px 10px 10px 10px;
+	margin: auto;
+	text-decoration: none;
+	font-size: 22px;
+	font-weight: bold;
+	font-family: 'Raleway', sans-serif;
+}
+
+#accedi {
+	margin-top: 33%;
+}
+
+.dx a {
+	text-decoration: none;
+	letter-spacing: 1px;
+}
+
+p a {
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	margin: auto;
+}
+
+.dx p {
+	text-align: center;
+}
+
+/*accesso*/
+
+.div_accesso {
+	background-color: white;
+	width: 27%;
+	color: black;
+	border: solid #4C1113;
+	font-family: 'Raleway', sans-serif;
+	margin: auto;
+	margin-top: 6%;
+	padding-bottom: 3%;
+}
+
+.div_accesso h2 {
+	text-align: center;
+	margin: auto;
+	margin-top: 13%;
+	margin-bottom: 10%;
+}
+
+.acc_reg input {
+	width: 70%;
+	margin-left: 15%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+
+.invio {
+	width: 72.5%;
+	background-color: #800000;
+	color: white;
+	border: solid #4C1113;
+	cursor: pointer;
+}
+
+.par {
+	margin-top: 10%;
+	margin-right: 0;
+	margin-left: 0;
+	text-align: center;
+}
+
+.par a {
+	color: #800000;
+	text-decoration: none;
+}
+
+/* registrazione */
+
+.max {
+	height: 113%;
+}
+
+.div_registrazione {
+	background-color: white;
+	width: 27%;
+	color: black;
+	border: solid #4C1113;
+	font-family: 'Raleway', sans-serif;
+	margin: auto;
+	margin-top: 6%;
+	padding-bottom: 3%;
+}
+
+.div_registrazione h2 {
+	text-align: center;
+	margin: auto;
+	margin-top: 13%;
+	margin-bottom: 10%;
+}
+
+.errore_form {
+	color: red;
+	font-size: 12px;
+	margin-left: 15%;
+}
+
+.errore {
+	color: red;
+	font-size: 15px;
+	margin-left: 21.5%;
+}
+
+
+/*profilo*/
+
+.div_profilo {
+	background-color: white;
+	width: 90%;
+	color: black;
+	border: solid #4C1113;
+	font-family: 'Raleway', sans-serif;
+	margin: auto;
+	margin-top: 6%;
+	padding-bottom: 3%;
+}
+
+.div_profilo h2 {
+	text-align: center;
+	margin: auto;
+	margin-top: 3%;
+	margin-bottom: 5%;
+}
+
+h3 {
+	text-align: center;
+	margin: auto;
+	margin-top: 3%;
+	margin-bottom: 5%;
+}
+
+.pulsante_lungo{
+	width: 90%;
+	background-color: #800000;
+	margin: auto;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-left: 3%;
+	color: white;
+	text-align: center;
+	margin-bottom: 1%;
+	font-size: 17px;
+	border: solid #4C1113;
+}
+
+.div_profilo a {
+	text-decoration: none;
+}
+
+.icona {
+	height: 55%;
+	float: right;
+	margin-right: 2%;
+	margin-top: 1.2%;
+}
+
+.form_cerca input {
+	background-color: white;
+	width: 30%;
+	float: left;
+	border-radius: 2px 2px 2px 2px;
+	margin: auto;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 5px;
+	border: 0;
+	width: 25%;
+	margin-top: 1.4%;
+}
+
+#sx {
+	float: left;
+	padding-left: 6px;
+	width: 35px;
+}
+/* crea_blog */
+
+form select {
+	width: 70.7%;
+	margin-left: 15%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+
+.div_profilo p {
+	margin-left: 15%;
+}
+
+.calibri {
+	font-family: calibri;
+}
+
+.timesnewroman {
+	font-family: Times New Roman;
+}
+
+
+.calibri {
+	font-family: calibri;
+}
+
+.timesnewroman {
+	font-family: Times New Roman;
+}
+
+.georgia {
+	font-family: Georgia;
+}
+
+.cambria {
+	font-family: Cambria;
+}
+
+.arial {
+	font-family: Arial;
+}
+
+.bookantiqua {
+	font-family: Book Antiqua;
+}
+
+.century {
+	font-family: Century;
+}
+
+.centurygothic {
+	font-family: Century Gothic;
+}
+
+.comicsansms {
+	font-family: Comic Sans MS;
+}
+
+.corbel {
+	font-family: Corbel;
+}
+
+.couriernew {
+	font-family: Courier New;
+}
+
+.garamond {
+	font-family: Garamond;
+}
+
+.verdana {
+	font-family: Verdana;
+}
+
+
+/*lista_blog*/
+
+.tab_lista_blog {
+    text-align: center;
+    width: 100%;
+    color: black;
+	margin-top: -3%;
+}
+
+.tab_lista_blog td{
+    height: 40px;
+}
+
+.tab_lista_blog th{
+    text-align: left;
+}
+
+/*visitatore*/
+
+.tabella {
+	width: 51%;
+    margin: auto;
+    text-align: : center;
+    color: black;
+}
+
+.tabella td{
+    height: 40px;
+	border-top: 0.9px dashed black;
+	text-align: center;
+	
+}
+
+.tabella th{
+    text-align: center;
+	width: 17%;
+}
+
+.spazio {
+	height: 50px;
+}
+
+
+/*post*/
+
+.div_post {
+	background-color: white;
+	width: 84%;
+	margin: auto;
+	margin-bottom: 4%;
+	border: 1.5px solid black;
+	padding-left: 3%;
+	padding-right: 3%;
+	padding-bottom: 1.5%;
+}
+
+.div_post h4 {
+	font-size: 17x;
+	letter-spacing: 1px;
+	word-spacing: 2px;  
+}
+
+.div_post p {
+	text-align: left;
+	margin-left: 0;
+}
+
+#data {
+	font-size: 11px;
+	text-align: right;
+	margin-right: 3%;
+	margin-bottom: -10px;
+}
+
+#marginebasso {
+	margin-bottom: 5%;
+}
+
+/*commenti*/
+
+hr {
+	margin: auto;
+	width: 100%; 
+	color: black;
+}
+
+.div_post h5 {
+	letter-spacing: 1px;
+	word-spacing: 2px;  
+}
+
+.comm {
+	background-color: #F5F5F5;
+	width: 100%;
+	margin-bottom: 2%;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	margin-top: -10px;
+}
+
+u a {
+	color: black;
+	font-size: 14px;
+}
+
+#destra {
+	float: right;
+	font-size: 14px;
+}
+
+#destra a {
+	color: black;
+}
+
+#form_testo {
+	margin-left: 15%;
+}
+
+/*crea post*/
+
+#area {
+	margin-left: 15%;
+}
+
+/*modifica utente*/
+#mod_utente {
+	width: 60%;
+}
+
+/*premium*/
+
+#center {
+	text-align: center;
+	margin: auto;
+	margin-bottom: 3%;
+}
+
+#smaller {
+	width: 66%;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+/*autocompletamento*/
+/* Formatting search box */
+    .search-box{
+        width: 70%;
+        position: relative;
+    }
+    .search-box input[type="text"]{
+        height: 32px;
+        padding: 5px 10px;
+        border: 1px solid #CCCCCC;
+		margin-left: 21.5%;
+    }
+    .result{
+        position: absolute;        
+        z-index: 999;
+        top: 100%;
+        left: 0;
+    }
+    .search-box input[type="text"], .result{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    /* Formatting result items */
+    .result p{
+		background-color: white;
+		width:97.4%;
+		margin-top:0;
+		margin-left: 21.5%;
+        padding: 7px 10px;
+        border: 1px solid #CCCCCC;
+        border-top: none;
+        cursor: pointer;
+    }
+    .result p:hover{
+        background: #f2f2f2;
+    }
+
+u span {
+	float: right;
+	text-decoration: underline;
+}
+
+/*footer*/
+
+footer{
+	text-align: right;
+	background-color: #463F3F;
+	height: 45px;
+	font-family: arial, sans-serif;
+	font-size: 15px;
+	color: white;
+	padding-right: 20px;
+	padding-top: 23px;
+	border-top-width: 0.1px;
+	border-top-style: solid;
+	border-top-color: black; 
+}

@@ -1,0 +1,98 @@
+QUERY
+
+- visitatore cerca blog tramite nome del blog
+SELECT *
+FROM visitatore as v, blog as b, lettura as l
+WHERE x = b.nome AND  
+                v.id_visitatore = l.id_visitatore AND 
+                b.id_blog = l.id_blog
+
+-visitatore cerca blog tramite nome utente del creatore
+SELECT *
+FROM visitatore as v, blog as b, lettura as l
+WHERE x = b.nome_utente AND  
+                v.id_visitatore = l.id_visitatore AND 
+                b.id_blog = l.id_blog
+
+-visitatore cerca blog tramite il nome del blog e il nome utente del creatore
+SELECT *
+FROM visitatore as v, blog as b, lettura as l
+WHERE x = b.nome_utente AND  
+                y = b.nome AND  
+                v.id_visitatore = l.id_visitatore AND 
+                b.id_blog = l.id_blog
+
+-visitatore cerca blog tramite tema
+SELECT *
+FROM visitatore as v, blog as b, lettura as l, tema as t
+WHERE x = t.nome AND  
+                v.id_visitatore = l.id_visitatore AND 
+                b.id_blog = l.id_blog AND 
+               b.id_blog = t.id_blog
+
+-registrato cerca blog tramite nome del blog
+SELECT *
+FROM registrato as r, blog as b, lettura as l
+WHERE x = b.nome AND  
+                r.nome_utente= l.nome_utente AND 
+                b.id_blog = l.id_blog
+
+-registrato cerca blog tramite nome utente del creatore
+SELECT *
+FROM registrato as r, blog as b, lettura as l
+WHERE x = b.nome_utente AND  
+                r.nome_utente= l.nome_utente AND 
+                b.id_blog = l.id_blog
+
+-registrato cerca blog tramite il nome del blog e il nome utente del creatore
+SELECT *
+FROM registrato as r, blog as b, lettura as l
+WHERE x = b.nome AND  
+                y = b.nome_utente AND  
+                r.nome_utente= l.nome_utente AND 
+                b.id_blog = l.id_blog
+
+-registrato cerca blog tramite tema
+SELECT *
+FROM registrato as r, blog as b, lettura as l, tema as t
+WHERE x = t.nome AND  
+                r.nome_utente= l.nome_utente AND 
+                b.id_blog = l.id_blog AND 
+                b.id_blog = t.id_blog
+
+- registrato crea blog
+INSERT INTO blog(id_blog, nome, font, sfondo)
+  VALUES (x, y, z, w)
+
+- registrato scrive post
+INSERT INTO post(id_post, testo, ora, data, immagini, titolo)
+  VALUES (x, y, z, w, k, q)
+
+- registrato commenta post
+INSERT INTO commento(data_ora, testo)
+  VALUES (x,y)
+
+- blog aggiunge tema
+INSERT INTO tema (id_tema, nome)
+  VALUES (x,y)
+
+-registrazione utente
+INSERT INTO registrato(nome_utente, password, documento, indirizzo, telefono)
+  VALUES (x,y,z,w,k)
+
+-visitatore ricerca una o più parole nei titoli dei vari post
+SELECT *
+FROM post as p, visitatore as v
+WHERE p.titolo like "%x%"  AND
+                v.id_visitatore = l.id_visitatore AND 
+                b.id_blog = l.id_blog AND 
+                p.id_post = b.id_post 
+
+-visitatore vota blog
+INSERT INTO lettura(data_ora, voto)
+  VALUES(x,y)
+
+-registrato vota blog
+INSERT INTO lettura(data_ora, voto)
+  VALUES(x,y)
+                    
